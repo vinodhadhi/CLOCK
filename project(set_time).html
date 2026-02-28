@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="settime.js" defer></script>
+    <style>
+        body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+/* Title */
+h5 {
+  position: absolute;
+  top: 40px;
+  font-size: 32px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* Clock Container */
+.clock {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 60px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Time Numbers */
+.clock h2 {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  background: white;
+  border-radius: 10px;
+  color: #243b55;
+  margin: 0;
+}
+
+/* Labels (AM, Min, Sec) */
+.clock span {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+    </style>
+  </head>
+  <body>
+    <h5>DIGITAL CLOCK</h5>
+    <div class="clock">
+      <h2 id="hours" type="text" >00</h2><span id="period">am:</span>
+      <h2 id="minutes" type="text" >00</h2><span>Min:</span>
+      <h2 id="seconds" type="text" >00</h2><span>Sec</span>
+    </div>
+  </body>
+</html>
